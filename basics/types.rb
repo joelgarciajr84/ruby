@@ -1,3 +1,5 @@
+#A file to show the Ruby data types
+
 #string
 name = "Dilma Roussef"
 puts name.class
