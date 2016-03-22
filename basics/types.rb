@@ -26,3 +26,9 @@ puts :presidentedobrasil.class
 arr = []
 puts arr.class
 
+currencies = ["USD", "BRL", "HKD"]
+puts currencies.first
+
+currencies << "EUR"
+
+nome = %w{Barack Obama} 
