@@ -32,3 +32,4 @@ puts currencies.first
 currencies << "EUR"
 
 nome = %w{Barack Obama} 
+
