@@ -1,27 +1,29 @@
-class Biblioteca
-    attr_reader :livros
+module VendaFacil
+    class Set
+        attr_reader :livros
 
-    def initialize
-        @livros = {} #Hash
-        @banco_de_arquivos = BancoDeArquivos.new
-    end
-
-    def adiciona(livro)
-        salva livro do
-            livros << livro
+        def initialize
+            @livros = {} #Hash
+            @banco_de_arquivos = BancoDeArquivos.new
         end
-    end
-    def livros
-        @livros.values.flatten
-    end
 
-    def livros_por_categoria(categoria)
-        @livros.select { |livro| livro.categoria == categoria }
-    end
+        def adiciona(livro)
+            salva livro do
+                livros << livro
+            end
+        end
+        def livros
+            @livros.values.flatten
+        end
 
-    private
-    def salva(livro)
-        @banco_de_arquivos.salva livro
-        yield
+        def livros_por_categoria(categoria)
+            @livros.select { |livro| livro.categoria == categoria }
+        end
+
+        private
+        def salva(livro)
+            @banco_de_arquivos.salva livro
+            yield
+        end
     end
 end

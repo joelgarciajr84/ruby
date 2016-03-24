@@ -1,7 +1,4 @@
-#coding utf-8
-class DVD < Midia
-    attr_accessor :valor
-    attr_reader :titulo
+class CD < Midia
 
     def initialize(titulo, valor, categoria)
         super()
@@ -11,6 +8,7 @@ class DVD < Midia
     end
 
     def to_s
-        %Q{Titulo: #{@titulo}, Valor: #{@valor}}
+        %Q{ Titulo: #{@titulo}, Valor: #{@valor} }
     end
+
 end

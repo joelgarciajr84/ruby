@@ -1,5 +1,6 @@
 require File.expand_path('shop/lib/midia.rb')
 require File.expand_path('shop/lib/dvd.rb')
+require File.expand_path('shop/lib/cd.rb')
 require File.expand_path('shop/lib/livro.rb')
 require File.expand_path('shop/lib/biblioteca.rb')
 require File.expand_path('shop/lib/relatorio.rb')
